@@ -1,0 +1,9 @@
+# LaTeX noise
+*.aux
+*.log
+*.gz
+
+# OSX noise
+.DS_Store
+profile
+
