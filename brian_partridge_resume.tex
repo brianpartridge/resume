@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[11pt]{article}
 \usepackage{fullpage}
 \usepackage{multicol}
 \usepackage{verbatim}
@@ -7,13 +7,11 @@
 \raggedbottom
 \raggedright
 
-%\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
-
 % DEFINITIONS FOR RESUME
 
 % Definition for the style of bullet to use
-\newcommand{\mydot}{$\cdot$}
-%\newcommand{\mydot}{$\bullet$}
+\newcommand{\mydot}{$\cdot$ }
+%\newcommand{\mydot}{$\bullet$ }
 
 \newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
 
@@ -21,15 +19,15 @@
 
 \newcommand{\contact}[3]{\vspace*{-8pt}\begin{center}{\LARGE \scshape {#1}}\\#2 \\ #3\end{center}\vspace*{-8pt}}
 
-\newcommand{\school}[2]{ \textbf{#1} $\cdot$ #2 \\}
+\newcommand{\school}[3]{\textbf{#1}{#2} \mydot #3 \\}
 
 \newenvironment{courses}{\begin{list}{\mydot}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
 
 \newcommand{\seniorproject}[2]{Senior Project: #1\\ #2  }
 
-\newcommand{\employer}[3]{ \textbf{#1} (#2)\\ \emph{#3}\\  }
+\newcommand{\employer}[3]{\textbf{#1} (#2)\\ \emph{#3}\\  }
 
-\newcommand{\project}[2]{ \textbf{#1} \emph{#2}\\  }
+\newcommand{\project}[2]{\textbf{#1} \emph{#2}\\  }
 
 \newenvironment{achievements}{\begin{list}{\mydot}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
 
@@ -44,13 +42,17 @@
 % HEADER
 
 \contact{Brian M. Partridge}
-{50 Belmont St. Apt 1, Marlborough, MA 01752}
-{(781) 801-8844 $\cdot$ brianpartridge@gmail.com $\cdot$ multipleentendre.com}
+{50 Belmont St. Marlborough, MA 01752}
+{
+(781) 801-8844
+\mydot brianpartridge@gmail.com 
+%\mydot multipleentendre.com
+}
 
 % EDUCATION
 
 \header{Education}
-\school{Worcester Polytechnic Institute, Worcester, MA}{Bachelor of Science in Computer Science, 2006}
+\school{Worcester Polytechnic Institute}{, Worcester, MA}{Bachelor of Science in Computer Science, 2006}
 
 \begin{comment}
 Selected Coursework:
@@ -96,7 +98,7 @@ Selected Coursework:
   \item Strong understanding of enterprise storage technologies.
 \end{achievements}
 
-\employer{Shannon Systems Ideas}{Summer 2004 and 2005}{Software Engineer Intern}
+\employer{Shannon Systems}{Summer 2004 and 2005}{Software Engineer Intern}
 \begin{achievements}
   \item Developed scripts for EDI processing of purchase order data between companies.
 \end{achievements}
