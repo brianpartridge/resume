@@ -27,7 +27,7 @@
 
 \newcommand{\employer}[3]{\textbf{#1} (#2)\\ \emph{#3}\\  }
 
-\newcommand{\project}[2]{\textbf{#1} \emph{#2}\\  }
+\newcommand{\project}[3]{\textbf{#1} (#2) \emph{#3}\\  }
 
 \newenvironment{achievements}{\begin{list}{\mydot}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
 
@@ -98,17 +98,21 @@ Selected Coursework:
   \item Strong understanding of enterprise storage technologies.
 \end{achievements}
 
-\employer{Shannon Systems}{Summer 2004 and 2005}{Software Engineer Intern}
+\employer{Shannon Systems}{Summer 2004 and 2005}{Software Engineering Intern}
 \begin{achievements}
   \item Developed scripts for EDI processing of purchase order data between companies.
 \end{achievements}
 
 % PROJECTS
 
-\header{Projects}
-\project{Six Degrees}{iPhone App}{
+\header{Personal Projects}
+\project{LazyEye}{2011}{iPhone App}{
 \begin{achievements}
-  \item In spare time, designed and implemented an application with Cocoa Touch and web APIs.
+  \item A reading app, utilizing Rapid Serial Visual Presentation (RSVP) for fast reading speeds.
+  \item Capable of extracting text from a website for clear, distraction-free reading.
+\end{achievements}}
+\project{Six Degrees}{2009}{iPhone App}{
+\begin{achievements}
   \item Utilizes the Six Degrees of Separation concept to display links between actors and films.
   \item Provides several modes of operation for reference and entertainment purposes.
 \end{achievements}}
@@ -118,8 +122,8 @@ Selected Coursework:
 \header{Skills Summary}
 \textbf{Programming Languages:} 
 \begin{achievements}
-  \item Proficient with C\#, C++, C
-  \item Competent with Python, Objective-C
+  \item Proficient with C\#, Objective-C, C++, C
+  \item Competent with Python
 \end{achievements}
 \vspace{-3pt}
 
@@ -127,7 +131,7 @@ Selected Coursework:
 
 \textbf{Operating Systems:} Windows, Mac OSX, Linux\\
 
-\textbf{Tools:} Visual Studio, CVS, vim, git\\
+\textbf{Tools:} Visual Studio, Xcode, CVS, vim, git\\
 
 \end{document}
 
