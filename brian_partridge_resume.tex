@@ -25,7 +25,7 @@
 
 \newcommand{\seniorproject}[2]{Senior Project: #1\\ #2  }
 
-\newcommand{\employer}[3]{\textbf{#1} (#2)\\ \emph{#3}\\  }
+\newcommand{\employer}[3]{\textbf{#1} (#2) \emph{#3}\\  }
 
 \newcommand{\project}[3]{\textbf{#1} (#2) \emph{#3}\\  }
 
@@ -42,11 +42,11 @@
 % HEADER
 
 \contact{Brian M. Partridge}
-{258 Ash St. Waltham, MA 02453}
+{110 Griggs Rd. Brookline, MA 02446}
 {
 (781) 801-8844
 \mydot brianpartridge@gmail.com 
-%\mydot multipleentendre.com
+%\mydot brianpartridge.name
 }
 
 % EDUCATION
@@ -54,84 +54,76 @@
 \header{Education}
 \school{Worcester Polytechnic Institute}{, Worcester, MA}{Bachelor of Science in Computer Science, 2006}
 
-\begin{comment}
-Selected Coursework:
-\vspace*{-10pt}
-\begin{multicols}{3}
-\begin{courses}
-  \item Operating Systems
-  \item Distributed Computer Systems
-  \item Software Engineering
-  \item Computer Networks
-  \item Human-Computer Interaction
-  \item Databases
-  \item Algorithms
-  \item Webware
-\end{courses}
-\end{multicols}
-\vspace*{-12pt}
-\end{comment}
-
-%\begin{comment}
 \seniorproject{BitTorrent Subscriptions}{
 \begin{achievements}
-  \item Designed an online content distribution platform utilizing the BitTorrent protocol and RSS feeds.
-  \item Extended a web based console for content creators to manage distribution of content.
-  \item Implemented a client application facilitating subscription to and retrieval of content.
+  \item Designed a content distribution platform for creators, built atop BitTorrent and RSS feeds.
 \end{achievements}
 }
-%\end{comment}
 
 % WORK
 
 \header{Work History}
-\employer{EMC Corporation}{June 2006 - present}{Senior Software Engineer}
+\employer{VMware, Inc}{May 2011 - Present}{Senior MTS}
+\begin{achievements}
+  \item Served as the lead iOS developer of a team focused on creating next generation management tools for VMware products on mobile devices.
+  \item Developed internal \textbf{iPhone} apps for monitoring vSphere and vCenter Operations installations.
+  \item Contributed to preexisting \textbf{iPad} apps for managing vSphere and vCloud.
+  \item Designed and implemented internal tools for build distribution, build feedback, and usage analysis.
+  \item Presented talks at internal innovation conferences about mobile development.
+  \item Provided expertise to guide the direction of a team with limited mobile experience.
+  \item Experience planning and directing intern projects.
+  \item Experience working independently and with a remote team.
+  \item 2 patents pending.
+\end{achievements}
+  
+\employer{EMC Corporation}{June 2006 - May 2011}{Senior Software Engineer}
 \begin{achievements}
   \item Served as a member of teams focused on developing various management and backup applications for EMC's flagship product, the \textbf{Symmetrix}.
-  \item Responsible for developing storage provisioning functionality for the EMC Virtual Storage Integrator (VSI) plug-in for the VMware vSphere client.  Utilized reverse engineering technologies to enable the display of contextual information and perform storage operations directly on VMware entities in the vSphere GUI. (\textbf{C\#})
-  \item Designed an interface for Virtual Machine Failback in VSI for use in disaster recovery scenarios to supplement VMware's Site Recovery Manager.
-  \item Designed a library to integrate EMC software with VMware Virtual Infrastructure environments using the VMware SOAP web services.  The library is utilized by essential Symmetrix management utilities, including \textbf{Solutions Enabler} and backup products for Microsoft Exchange and SQL Server. (\textbf{C++})
-  \item Re-engineered a legacy storage management utility with enhanced functionality using Microsoft VDS.
-  \item Maintained a product providing an interface to physical storage information with various file systems and logical volume managers.
+  \item Responsible for developing advanced storage operations in the EMC Virtual Storage Integrator plug-in for the VMware vSphere client.
+  \item Utilized reverse engineering techniques to extend the vSphere client beyond its stock capabilities.
   \item Experience with version control software in a very large code base.
-  \item Experience working with a team and independently.
-  \item Strong understanding of enterprise storage technologies.
 \end{achievements}
 
 \employer{Shannon Systems}{Summer 2004 and 2005}{Software Engineering Intern}
-\begin{achievements}
-  \item Developed scripts for EDI processing of purchase order data between companies.
-\end{achievements}
-
+\vspace*{14pt}
+  
 % PROJECTS
 
 \header{Personal Projects}
-\project{LazyEye}{2011}{iPhone App}{
+  \project{Open Source}{Current}{}{
+  \begin{achievements}
+    \item Various projects: \emph{https://github.com/brianpartridge}
+  \end{achievements}}
+\project{Pocket Share Pro}{2012}{iPhone}{
+\begin{achievements}
+  \item A tool for affiliate marketing of iOS apps via LinkShare, Twitter, and Facebook.
+  \item Capable of intelligently detecting and filtering thousands of distinct apps installed on an iOS device.
+\end{achievements}}  
+\project{LazyEye}{2011}{iPhone}{
 \begin{achievements}
   \item A reading app, utilizing Rapid Serial Visual Presentation (RSVP) for fast reading speeds.
-  \item Capable of extracting text from a website for clear, distraction-free reading.
 \end{achievements}}
-\project{Six Degrees}{2009}{iPhone App}{
+\project{Six Degrees}{2009}{iPhone}{
 \begin{achievements}
-  \item Utilizes the Six Degrees of Separation concept to display links between actors and films.
-  \item Provides several modes of operation for reference and entertainment purposes.
+  \item Provides several modes of play by calculating the degrees of separation between actors.
 \end{achievements}}
-
+Additional details and links: \emph{http://brianpartridge.name}\\  
+\vspace*{14pt}
+  
 % SKILLS
 
 \header{Skills Summary}
 \textbf{Programming Languages:} 
 \begin{achievements}
-  \item Proficient with C\#, Objective-C, C++, C
-  \item Competent with Python
+  \item Proficient with Objective-C, C\#, C++, C
+  \item Competent with Python, Javascript
 \end{achievements}
 \vspace{-3pt}
 
-\textbf{Frameworks \& APIs:} VMware Web Services SDK, .NET, Windows Forms, Cocoa Touch\\
+\textbf{Frameworks \& APIs:} UIKit, VMware Web Services SDK, .NET\\
 
-\textbf{Operating Systems:} Windows, Mac OSX, Linux\\
+\textbf{Operating Systems:} Mac OSX, Windows, Linux\\
 
-\textbf{Tools:} Visual Studio, Xcode, CVS, vim, git\\
+\textbf{Tools:} Xcode, git, vim, Visual Studio\\
 
 \end{document}
-
